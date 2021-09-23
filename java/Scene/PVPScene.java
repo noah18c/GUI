@@ -20,6 +20,7 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.CornerRadii;
 import javafx.scene.layout.GridPane;
+import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
@@ -29,14 +30,14 @@ public class PVPScene implements SceneInterface {
 	private Scene pvpscene;
 	private Handler handler;
 	private VBox sideMenuPane;
-	private GridPane chessBoardLayout;
+	private Pane chessBoardLayout;
 	private BorderPane root;
 	
 	private ChessBoard chessboard;
 	
 	public PVPScene(Handler handler) {
 		this.handler = handler;
-		chessboard = new ChessBoard();
+		chessboard = new ChessBoard(handler);
 		
 	}
 	
@@ -45,7 +46,6 @@ public class PVPScene implements SceneInterface {
 		root = new BorderPane();
 
 		chessboard.createChessBoard();
-		chessboard.initPieces();
 		chessBoardLayout = chessboard.getChessBoard();
 		createSideMenu();
 		//createGameEnvironment();
@@ -95,12 +95,13 @@ public class PVPScene implements SceneInterface {
 
 		
 	}
-	*/
+	
 	
 	private void setBInit() {
 		// TODO Auto-generated method stub
 		
 	}
+	*/
 
 	public Scene getScene() {
 		return pvpscene;

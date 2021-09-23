@@ -7,8 +7,8 @@ import javafx.scene.image.ImageView;
 
 public class Bishop extends Pieces{
 
-	public Bishop(Handler handler, boolean isWhite, int column, int row) {
-		super(handler, isWhite, column, row);
+	public Bishop(Handler handler, boolean isWhite, int column, int row, int squaresize) {
+		super(handler, isWhite, column, row, squaresize);
 		id = 3;
 	}
 	

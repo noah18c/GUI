@@ -6,8 +6,8 @@ import javafx.scene.image.ImageView;
 
 public class Knight extends Pieces {
 
-	public Knight(Handler handler, boolean isWhite, int column, int row) {
-		super(handler, isWhite, column, row);
+	public Knight(Handler handler, boolean isWhite, int column, int row, int squaresize) {
+		super(handler, isWhite, column, row, squaresize);
 		id = 4;
 	}
 	

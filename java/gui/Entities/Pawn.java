@@ -6,8 +6,8 @@ import javafx.scene.image.ImageView;
 
 public class Pawn extends Pieces{
 
-	public Pawn(Handler handler, boolean isWhite, int column, int row) {
-		super(handler, isWhite, column, row);
+	public Pawn(Handler handler, boolean isWhite, int column, int row, int squaresize) {
+		super(handler, isWhite, column, row, squaresize);
 		id = 5;
 	}
 	

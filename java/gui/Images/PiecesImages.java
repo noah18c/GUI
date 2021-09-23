@@ -8,39 +8,40 @@ import javafx.scene.image.ImageView;
 
 public class PiecesImages {
 	
-	ArrayList<ImageView> bPieces, wPieces;
 	private int PIECE_WIDTH = 60;
+	ArrayList<String> bPieces, wPieces;
 	 
 	
 	public PiecesImages() {
+		bPieces = new ArrayList<>();
+		wPieces = new ArrayList<>();
 		
-		loadPiecesImages();
+		loadImagePaths();
+		
 		// defines a viewport into the source image (achieving a "zoom" effect) and
         // displays it rotated
 		
 	}
 	
-	private void loadPiecesImages() {
-		bPieces = new ArrayList<>();
-		wPieces = new ArrayList<>();
+	private void loadImagePaths() {
 		
 		
 		
-		wPieces.add(new ImageView(new Image("WKing.png")));
-		wPieces.add(new ImageView(new Image("WQueen.png")));
-		wPieces.add(new ImageView(new Image("WRook.png")));
-		wPieces.add(new ImageView(new Image("WBishop.png")));
-		wPieces.add(new ImageView(new Image("WKnight.png")));
-		wPieces.add(new ImageView(new Image("WPawn.png")));
+		wPieces.add("WKing.png");
+		wPieces.add("WQueen.png");
+		wPieces.add("WRook.png");
+		wPieces.add("WBishop.png");
+		wPieces.add("WKnight.png");
+		wPieces.add("WPawn.png");
 		
-		bPieces.add(new ImageView(new Image("BKing.png")));
-		bPieces.add(new ImageView(new Image("BQueen.png")));
-		bPieces.add(new ImageView(new Image("BRook.png")));
-		bPieces.add(new ImageView(new Image("BBishop.png")));
-		bPieces.add(new ImageView(new Image("BKnight.png")));
-		bPieces.add(new ImageView(new Image("BPawn.png")));
 		
-		setPiecesSize(PIECE_WIDTH);
+		
+		bPieces.add("BKing.png");
+		bPieces.add("BQueen.png");
+		bPieces.add("BRook.png");
+		bPieces.add("BBishop.png");
+		bPieces.add("BKnight.png");
+		bPieces.add("BPawn.png");
        
 	}
 	
@@ -48,20 +49,11 @@ public class PiecesImages {
 		return PIECE_WIDTH;
 	}
 	
-	public void setPiecesSize(int width) {
-		for(int i = 0; i<=5; i++) {
-			wPieces.get(i).setFitWidth(width);
-			wPieces.get(i).setPreserveRatio(true);
-			bPieces.get(i).setFitWidth(width);
-			bPieces.get(i).setPreserveRatio(true);
-		}
-	}
-	
-	public ArrayList<ImageView> getBPieces() {
+	public ArrayList<String> getBPieces() {
 		return bPieces;
 	}
 	
-	public ArrayList<ImageView> getWPieces() {
+	public ArrayList<String> getWPieces() {
 		return wPieces;
 	}
 }

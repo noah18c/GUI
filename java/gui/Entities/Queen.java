@@ -6,8 +6,8 @@ import javafx.scene.image.ImageView;
 
 public class Queen extends Pieces{
 
-	public Queen(Handler handler, boolean isWhite, int column, int row) {
-		super(handler, isWhite, column, row);
+	public Queen(Handler handler, boolean isWhite, int column, int row, int squaresize) {
+		super(handler, isWhite, column, row, squaresize);
 		id = 1;
 		setPieceColor();
 	}

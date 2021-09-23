@@ -10,8 +10,8 @@ import javafx.scene.input.KeyCode;
 
 public class King extends Pieces {
 		
-	public King(Handler handler, boolean isWhite, int column, int row) {
-		super(handler, isWhite, column, row);
+	public King(Handler handler, boolean isWhite, int column, int row, int squaresize) {
+		super(handler, isWhite, column, row, squaresize);
 		id = 0;
 	}
 	

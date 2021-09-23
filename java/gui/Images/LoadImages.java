@@ -9,7 +9,7 @@ import javafx.scene.image.ImageView;
 public class LoadImages {
 	
 	private ArrayList<Image> icons;
-	private ArrayList<ImageView> bPieces, wPieces;
+	private ArrayList<String> bPieces, wPieces;
 	private PiecesImages pi;
 	
 	
@@ -32,11 +32,11 @@ public class LoadImages {
 		return pi;
 	}
 	
-	public ArrayList<ImageView> getBPieces() {
+	public ArrayList<String> getBPieces() {
 		return bPieces;
 	}
 	
-	public ArrayList<ImageView> getWPieces() {
+	public ArrayList<String> getWPieces() {
 		return wPieces;
 	}
 }

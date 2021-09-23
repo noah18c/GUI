@@ -6,8 +6,8 @@ import javafx.scene.image.ImageView;
 
 public class Rook extends Pieces{
 
-	public Rook(Handler handler, boolean isWhite, int column, int row) {
-		super(handler, isWhite, column, row);
+	public Rook(Handler handler, boolean isWhite, int column, int row, int squaresize) {
+		super(handler, isWhite, column, row, squaresize);
 		id = 2;
 	}
 	
